@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:news_app_test_task/presentation/screens/home_screen/home_screen_tabs/latest_news_tab.dart';
+import 'package:news_app_test_task/presentation/screens/home_screen/home_screen_tabs/popular_news_tab.dart';
+
+import 'home_screen_tabs/subscriptions_tab.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -51,8 +54,8 @@ class HomeScreen extends StatelessWidget {
           child: TabBarView(
             children: [
               LatestNewsTab(),
-              Text('second tab'),
-              Text('third tab'),
+              PopularNewTab(),
+              SubscriptionsTab(),
             ],
           ),
         ),

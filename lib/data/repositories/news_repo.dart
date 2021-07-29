@@ -1,3 +1,5 @@
+import 'package:uuid/uuid.dart';
+
 import 'package:news_app_test_task/data/data_provider/news_data.dart';
 import 'package:news_app_test_task/data/models/article.dart';
 import 'package:news_app_test_task/data/models/author.dart';
@@ -17,6 +19,7 @@ class NewsRepo {
     _newsRawData.forEach((element) {
       allNewsList.add(
         Article(
+          id: Uuid().v1(),
           author: element['author'] as Author,
           date: element['date'] as DateTime,
           title: element['title'].toString(),

@@ -1,6 +1,7 @@
 import 'package:news_app_test_task/data/models/author.dart';
 
 class Article {
+  String id;
   Author author;
   DateTime date;
   String title;
@@ -10,9 +11,10 @@ class Article {
   bool isLiked;
   int commentsQty;
   bool isFavorite;
-  String picture;
+  String? picture;
 
   Article({
+    required this.id,
     required this.author,
     required this.date,
     required this.title,
@@ -22,6 +24,6 @@ class Article {
     required this.isLiked,
     required this.commentsQty,
     required this.isFavorite,
-    required this.picture,
+    this.picture,
   });
 }
