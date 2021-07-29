@@ -6,7 +6,7 @@
 - AppBar with action buttons
 - TabBar with three tabs, each tab represents news
     1. __Latest News tab__ - news are sotted by date
-    2. __Popular News tab__ - the most liked article, sorted by likes quantity
+    2. __Popular News tab__ - the most liked articles, sorted by likes quantity
     3. __Subscriptions tab__ - represents news that user marked as favorite
 
 - Header: The most liked article topic for a day is shown on Latest News tab as a header. The header is dismissible.
