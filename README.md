@@ -1,16 +1,21 @@
-# news_app_test_task
+## Newsletter App (test assignment)
+---
+##### Single page Newsletter application
+##### App elements:
 
-A new Flutter project.
+- AppBar with action buttons
+- TabBar with three tabs, each tab represents news
+    1. __Latest News tab__ - news are sotted by date
+    2. __Popular News tab__ - the most liked article, sorted by likes quantity
+    3. __Subscriptions tab__ - represents news that user marked as favorite
 
-## Getting Started
+- Header: The most liked article topic for a day is shown on Latest News tab as a header. The header is dismissible.
+- Each article have a publication date and buttons (like, comment, share and mark article as favorite).
+___
+##### App screenshots:
 
-This project is a starting point for a Flutter application.
+![](/screenshots/newsletter.png)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+----
+    
+Developer - ___Petro Moskal___ - [linkedIn page](https://www.linkedin.com/in/petro-moskal-7336a355/)
