@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:news_app_test_task/logic/all_news.dart';
-import 'package:news_app_test_task/presentation/screens/home_screen/home_screen.dart';
 import 'package:provider/provider.dart';
 
-void main() {
-  runApp(MyApp());
-}
+import '/logic/all_news.dart';
+import '/logic/news_header.dart';
+import '/presentation/screens/home_screen/home_screen.dart';
+
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider.value(value: AllNews()),
+        ChangeNotifierProvider.value(value: NewsHeader()),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
           primaryColor: Colors.white,
           accentColor: Color.fromRGBO(75, 187, 205, 1),
-          // scaffoldBackgroundColor: Colors.grey.shade200,
         ),
         home: HomeScreen(),
       ),

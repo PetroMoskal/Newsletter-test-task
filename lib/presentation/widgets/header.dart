@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:news_app_test_task/logic/all_news.dart';
-import 'package:news_app_test_task/presentation/widgets/spacer.dart';
 import 'package:provider/provider.dart';
+
+import '/logic/news_header.dart';
+import '/presentation/widgets/spacer.dart';
 
 class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final topicColor = Theme.of(context).primaryColor;
-    final header = Provider.of<AllNews>(context).header();
+    final header = Provider.of<NewsHeader>(context).header();
 
     return Column(
       children: [
@@ -35,7 +36,7 @@ class Header extends StatelessWidget {
                   ),
                   TextButton(
                       onPressed: () {
-                        Provider.of<AllNews>(context, listen: false)
+                        Provider.of<NewsHeader>(context, listen: false)
                             .closeHeader();
                       },
                       child: Icon(

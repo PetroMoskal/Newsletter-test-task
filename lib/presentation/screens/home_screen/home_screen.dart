@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:news_app_test_task/presentation/screens/home_screen/home_screen_tabs/latest_news_tab.dart';
-import 'package:news_app_test_task/presentation/screens/home_screen/home_screen_tabs/popular_news_tab.dart';
 
-import 'home_screen_tabs/subscriptions_tab.dart';
+import '/presentation/screens/home_screen/home_screen_tabs/latest_news_tab.dart';
+import '/presentation/screens/home_screen/home_screen_tabs/popular_news_tab.dart';
+import '/presentation/screens/home_screen/home_screen_tabs/subscriptions_tab.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // double appBarHeight = MediaQuery.of(context).size.height * 0.10;
-
     return DefaultTabController(
       length: 3,
       child: Scaffold(

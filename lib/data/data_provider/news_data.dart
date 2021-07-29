@@ -1,14 +1,14 @@
 import 'dart:math';
-
 import 'package:flutter_lorem/flutter_lorem.dart';
-import 'package:news_app_test_task/data/models/author.dart';
+
+import '/data/models/author.dart';
 
 class NewsData {
   Random random = Random();
 
   List<Map<String, Object?>> get newsRawData {
     return List.generate(
-      100,
+      7,
       (index) {
         return {
           'title': lorem(paragraphs: 1, words: 3),
@@ -24,9 +24,6 @@ class NewsData {
             avatarLink:
                 'https://images.pexels.com/photos/3292558/pexels-photo-3292558.jpeg?cs=srgb&dl=pexels-ekrulila-3292558.jpg&fm=jpg',
             fullName: 'Lera Klymenko',
-            registrationDate: DateTime.now().subtract(
-              Duration(days: 400),
-            ),
           ),
         };
       },
