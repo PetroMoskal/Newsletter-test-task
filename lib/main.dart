@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_app_test_task/logic/news.dart';
-import 'package:news_app_test_task/presentation/screens/home_screen.dart';
+import 'package:news_app_test_task/logic/all_news.dart';
+import 'package:news_app_test_task/presentation/screens/home_screen/home_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -12,12 +12,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider.value(value: News()),
+        ChangeNotifierProvider.value(value: AllNews()),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primaryColor: Colors.white,
+          accentColor: Color.fromRGBO(75, 187, 205, 1),
+          // scaffoldBackgroundColor: Colors.grey.shade200,
         ),
         home: HomeScreen(),
       ),
