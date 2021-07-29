@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider.value(value: NewsHeader()),
       ],
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Newsletter App',
         theme: ThemeData(
           primaryColor: Colors.white,
           accentColor: Color.fromRGBO(75, 187, 205, 1),
